@@ -10,7 +10,7 @@
     {% if user %}
         <div>
             <h1>You are currently under the account - {{ user.username }}#{{ user.discriminator }}</h1>
-            <p><a href="{{ url_for('profile') }}">Управление профилем</a></p>
+            <p><a href="{{ url_for('profile') }}">My Profile</a></p>
         </div>
     {% else %}
         <div>
