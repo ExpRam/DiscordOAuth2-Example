@@ -13,7 +13,7 @@ class OAuth2:
         self.token_type = json.get('token_type')
 
     def compareScopes(self, scopes: list) -> bool:
-        return True if set(self.scope) == set(scopes) else False
+        return set(self.scope) == set(scopes)
 
 
 class User:
